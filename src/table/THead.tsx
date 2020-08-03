@@ -1,18 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Th = styled.th`
-  position: sticky;
-  top: 0;
-  background-color: white;
-`
+import { applyTestid } from '../utils'
 
 export const THead: React.FC<{ headers: string[] }> = ({ headers }) => {
   return (
     <thead>
       <tr>
         {headers.map((header, index) => (
-          <Th key={index}>{header}</Th>
+          <th {...applyTestid(process.env.NODE_ENV, "header")} key={index}>{header}</th>
         ))}
       </tr>
     </thead>

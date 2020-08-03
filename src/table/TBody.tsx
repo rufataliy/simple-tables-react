@@ -1,6 +1,6 @@
 import React from 'react'
-import { Options, CellOptions, GenericObject } from './models'
-import { fetchPropOf } from './utils'
+import { Options, CellOptions, GenericObject } from '../models'
+import { fetchPropOf, applyTestid } from '../utils'
 
 type FillRow = <T>(entry: T, cellOptions: CellOptions<T>) => JSX.Element[]
 
@@ -12,7 +12,7 @@ const fillRow: FillRow = (entry, cellOptions) => {
   for (const prop in cellOptions) {
     const wrapToCustomComponent = cellOptions[prop]?.wrapper
     const element = (
-      <td>
+      <td key={prop}>
         {wrapToCustomComponent
           ? wrapToCustomComponent(fetchValueByProp(prop), entry)
           : fetchValueByProp(prop)}
@@ -36,12 +36,11 @@ export function TBody<T extends GenericObject>({
 }: Props<T>): JSX.Element {
   const { rowOptions, cellOptions } = options
 
-  console.log(data)
-
   return (
     <tbody>
       {data.map((entry, index) => (
         <tr
+          {...applyTestid(process.env.NODE_ENV, "row")}
           onClick={(): void => {
             rowOptions?.onClick(entry)
           }}
