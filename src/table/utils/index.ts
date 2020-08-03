@@ -1,0 +1,1 @@
+export { fetchPropOf } from "./fetchPropOf"
