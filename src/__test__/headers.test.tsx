@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { Table } from '../table'
 import { Options } from "../models"
 import { employees, Employee } from '../__mocks__'
+import { getHeaders } from '../utils'
 
 const options: Options<Employee> = {
   cellOptions: {
@@ -15,7 +16,11 @@ const options: Options<Employee> = {
 
 test('Should render correct headings', () => {
   render(<Table data={employees} options={options} />)
+  const headersFromTest = getHeaders(options)
 
-  const emp_numberHeader = screen.getByText('Employee number')
-  expect(emp_numberHeader.textContent).toBe('Employee number')
+  const headersFromDom = screen.getAllByTestId('header')
+  headersFromDom.forEach((element, index) => {
+    expect(element.textContent).toBe(headersFromTest[index])
+
+  })
 })
