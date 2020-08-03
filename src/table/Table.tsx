@@ -1,7 +1,8 @@
 import React from 'react'
 import { TBody } from './TBody'
 import { THead } from './THead'
-import { Options, GenericObject } from './models'
+import { Options, GenericObject } from '../models'
+import { getHeaders } from '../utils'
 
 interface Props<T> {
   data: T[]
@@ -24,16 +25,13 @@ export function Table<T extends GenericObject>({
   data,
   options
 }: Props<T>): JSX.Element {
-  const headers = Object.keys(options.cellOptions).map(
-    (option) => options.cellOptions[option]?.displayName ?? ''
-  )
 
   return (
     <div className='srt'>
       <style>{style}</style>
       <div className='srt-wrapper'>
         <table>
-          <THead headers={headers} />
+          <THead headers={getHeaders(options)} />
           <TBody data={data} options={options} />
         </table>
       </div>
