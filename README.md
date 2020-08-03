@@ -13,14 +13,23 @@ npm install --save simple-react-table
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
+import {Table, Options} from "simple-react-table"
 
-import MyComponent from 'simple-react-table'
-import 'simple-react-table/dist/index.css'
+const options: Options<Employee>={
+  cellOptions:{
+    name: { dislpayName: "First name" },
+    emp_number: { displayName: "Employee number" },
+    position: { displayName: "Position" },
+    years: { displayName: "Experience" }
+  }
+}
 
 class Example extends Component {
+  const [responseData] = useApi<Employee[]>()
+
   render() {
-    return <MyComponent />
+    return <Table data={responseData} options={options} />
   }
 }
 ```
