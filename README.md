@@ -10,7 +10,7 @@
 npm install --save simple-react-table
 ```
 
-## Usage
+## Basic Usage
 
 ```tsx
 import React from 'react'
@@ -18,7 +18,7 @@ import {Table, Options} from "simple-react-table"
 
 const options: Options<Employee>={
   cellOptions:{
-    name: { dislpayName: "First name" },
+    name: { displayName: "First name" },
     emp_number: { displayName: "Employee number" },
     position: { displayName: "Position" },
     years: { displayName: "Experience" }
