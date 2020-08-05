@@ -35,10 +35,12 @@ export function TBody<T extends GenericObject>({
   options
 }: Props<T>): JSX.Element {
   const { rowOptions, cellOptions } = options
-
+  if (!Array.isArray(data)) {
+    console.warn(`The type of data prop should be array of objects, but the provided data is type of ${typeof data}: ${data}`)
+  }
   return (
     <tbody>
-      {data.map((entry, index) => (
+      {Array.isArray(data) && data.map((entry, index) => (
         <tr
           {...applyTestid(process.env.NODE_ENV, "row")}
           onClick={(): void => {
