@@ -2,7 +2,7 @@ import React from 'react'
 import { TBody } from './TBody'
 import { THead } from './THead'
 import { Options, GenericObject } from '../models'
-import { getHeaders } from '../utils'
+import { getHeaders } from '../../utils'
 
 interface Props<T> {
   data: T[]
