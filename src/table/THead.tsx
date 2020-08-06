@@ -1,5 +1,5 @@
 import React from 'react'
-import { applyTestid } from '../../utils'
+import { applyTestid } from '../utils'
 
 export const THead: React.FC<{ headers: string[] }> = ({ headers }) => {
   return (

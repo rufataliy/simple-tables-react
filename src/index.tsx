@@ -1,2 +1,2 @@
 export { Table } from "./table"
-export type { Options } from "./models"
+export type { Options } from "./table"

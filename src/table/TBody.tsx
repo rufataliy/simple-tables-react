@@ -1,6 +1,6 @@
 import React from 'react'
-import { Options, CellOptions, GenericObject } from '../models'
-import { fetchPropOf, applyTestid } from '../../utils'
+import { Options, CellOptions, GenericObject } from './models'
+import { fetchPropOf, applyTestid } from '../utils'
 
 type FillRow = <T>(entry: T, cellOptions: CellOptions<T>) => JSX.Element[]
 
