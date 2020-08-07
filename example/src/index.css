@@ -12,3 +12,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  height: 100vh;
+}
+th, td{
+  padding:5px 9px;
+}
+.srt .srt-wrapper th {
+  background-color: lightsalmon;
+}
+table, th, td{
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
