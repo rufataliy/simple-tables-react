@@ -1,10 +1,23 @@
 import React from 'react'
+import { Router, Route } from "react-router-dom"
+import { createBrowserHistory } from "history"
+import { WithLink } from './withLink';
+import { Header } from "./Header"
+import { WithIcon } from "./WithIcons"
+import './index.css'
 
-import { ExampleComponent } from 'simple-react-table'
-import 'simple-react-table/dist/index.css'
+const history = createBrowserHistory();
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <Router history={history}>
+      <Header />
+      <div className="wrapper">
+        <Route exact path="/withLink" component={WithLink} />
+        <Route exact path="/withIcons" component={WithIcon} />
+      </div >
+    </Router>
+  )
 }
 
 export default App
