@@ -1,22 +1,18 @@
 import React from 'react'
-import { Router, Route } from "react-router-dom"
-import { createBrowserHistory } from "history"
-import { WithLink } from './withLink';
-import { Header } from "./Header"
-import { WithIcon } from "./WithIcons"
+import { WithLink, WithSelects, WithIcons } from './tables';
 import './index.css'
-
-const history = createBrowserHistory();
+import "./styles/highlight.css"
 
 const App = () => {
   return (
-    <Router history={history}>
-      <Header />
+    <>
       <div className="wrapper">
-        <Route exact path="/withLink" component={WithLink} />
-        <Route exact path="/withIcons" component={WithIcon} />
+        <div>You can wrap your component to custom component and extends the functionality.</div>
+        <WithLink />
+        <WithIcons />
+        <WithSelects />
       </div >
-    </Router>
+    </>
   )
 }
 
