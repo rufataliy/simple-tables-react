@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import { Table } from '../table'
-import { Options } from "../models"
+import { Table, Options } from '../table'
 import { employees, Employee } from '../__mocks__'
 import { getHeaders } from '../utils'
 
@@ -21,6 +20,5 @@ test('Should render correct headings', () => {
   const headersFromDom = screen.getAllByTestId('header')
   headersFromDom.forEach((element, index) => {
     expect(element.textContent).toBe(headersFromTest[index])
-
   })
 })
