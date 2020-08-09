@@ -29,8 +29,28 @@ const options: Options<City> = {
 export const WithIcons = () => {
   return (
     <>
-      <WithIconsCode />
-      <Table data={cities} options={options} />
+      <div className='w-100'>
+        <h3 className='light'>With icons</h3>
+        <p className='dark'>
+          Based on some custom logic you can render different data or icons in
+          the table. In the example below the model looks like this:
+          <pre>
+            <code>
+              {`
+              {
+                name: "Vancouver";
+                weather: "cloudy";
+                temperature: "21";
+                km: "3020";
+              }
+            `}
+            </code>
+          </pre>
+          Based on weather value different icons rendered instead.
+        </p>
+        <WithIconsCode />
+        <Table data={cities} options={options} />
+      </div>
     </>
   )
 }

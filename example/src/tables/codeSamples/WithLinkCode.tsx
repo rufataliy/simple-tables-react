@@ -13,7 +13,7 @@ export const WithLinkCode = () => {
   import { Employee } from '../models'
 
   const wrapToLink = (value: any, entry: Employee) => {
-    return <a href={\`somelink/\${entry}\`}>{value}</a>
+    return <a href={\`somelink/\${entry.uuid}\`}>{value}</a>
   }
 
   const options: Options<Employee> = {

@@ -48,7 +48,13 @@ export const WithSelects = () => {
     return `checks: ${JSON.stringify(checks)}`
   }
   return (
-    <>
+    <div className='w-100'>
+      <h3 className='light'>With checkboxes</h3>
+      <p className='dark'>
+        You can create a wrapper function that is kooks to your component state
+        and pass it down to the table. It wll allow you render fomr elements and
+        keep track of their state in you component. See the example below
+      </p>
       <WithSelectCode />
       <div className='highlight-wrapper'>
         <Highlighter language='javascript' style={atomOneDark}>
@@ -56,6 +62,6 @@ export const WithSelects = () => {
         </Highlighter>
       </div>
       <Table data={employees} options={options} />
-    </>
+    </div>
   )
 }
