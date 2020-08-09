@@ -67,3 +67,19 @@ td {
   font-family: monospace;
   display: block;
 }
+
+.flex {
+  display: flex;
+}
+.w-100 {
+  width: 100%;
+}
+.ml-s {
+  margin-left: 10px;
+}
+.light {
+  color: grey;
+}
+.default {
+  color: #686868;
+}
