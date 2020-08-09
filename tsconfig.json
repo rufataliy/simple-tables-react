@@ -18,7 +18,15 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
     "src"
@@ -26,6 +34,9 @@
   "exclude": [
     "node_modules",
     "dist",
-    "example"
+    "example",
+    "src/__test__",
+    "src/__mocks__",
+    "src/utils"
   ]
 }

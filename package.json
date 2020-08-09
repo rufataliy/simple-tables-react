@@ -12,7 +12,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "build": "rimraf './dist' && microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "test": "react-scripts test"
   },
@@ -51,7 +51,9 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
     "styled-components": "^5.1.1",
-    "typescript": "^3.7.5"
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.7.5",
+    "webpack-cli": "^3.3.12"
   },
   "files": [
     "dist"
