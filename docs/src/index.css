@@ -83,3 +83,9 @@ td {
 .default {
   color: #686868;
 }
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 97%;
+  }
+}

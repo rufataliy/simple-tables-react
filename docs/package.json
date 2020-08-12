@@ -1,11 +1,11 @@
 {
-  "name": "simple-react-table-example",
-  "homepage": "https://rufataliy.github.io/simple-react-table",
+  "name": "simple-tables-react-example",
+  "homepage": "https://rufataliy.github.io/simple-tables-react",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build && move './build' '../' ",
+    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
     "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject",
     "predeploy": "npm run build",
