@@ -1,6 +1,6 @@
 {
   "name": "simple-tables-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight simple react table library that will provide easy api and will keep your component clean.",
   "author": "rufataliy",
   "license": "MIT",
