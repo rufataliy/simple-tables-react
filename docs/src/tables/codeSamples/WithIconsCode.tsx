@@ -12,7 +12,6 @@ export const WithIconsCode = () => {
   import { cities } from '../___mock__'
   import { City } from '../models'
   import { cloudy, pSunny, snowy, sunny } from '../icons'
-  import { WithIconsCode } from './codeSamples'
 
   const wrapToIcon = (value: any): JSX.Element => {
     const icons = {
@@ -39,10 +38,7 @@ export const WithIconsCode = () => {
 
   export const WithIcons = () => {
     return (
-      <>
-        <WithIconsCode />
         <Table data={cities} options={options} />
-      </>
     )
   }
 
