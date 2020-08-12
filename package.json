@@ -1,13 +1,16 @@
 {
-  "name": "simple-react-table",
+  "name": "simple-tables-react",
   "version": "1.0.0",
   "description": "Lightweight simple react table library that will provide easy api and will keep your component clean.",
   "author": "rufataliy",
   "license": "MIT",
-  "repository": "rufataliy/simple-react-table",
+  "repository": "rufataliy/simple-tables-react",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "engines": {
     "node": ">=10"
   },
@@ -58,8 +61,5 @@
   "files": [
     "dist"
   ],
-  "typings": "./dist/index.d.ts",
-  "dependencies": {
-    "lodash": "^4.17.19"
-  }
+  "typings": "./dist/index.d.ts"
 }
