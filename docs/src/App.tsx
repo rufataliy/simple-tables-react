@@ -7,13 +7,14 @@ const App = () => {
     <>
       <div className='wrapper'>
         <div>
-          You can wrap your component to custom component and extends the
-          functionality.
+          Here are some examples how you can use the <strong>Table</strong>{' '}
+          component.
         </div>
         <BasicTable />
         <WithLink />
         <WithIcons />
         <WithSelects />
+        Some example coming soon . . .
       </div>
     </>
   )
