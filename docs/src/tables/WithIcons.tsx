@@ -4,6 +4,8 @@ import { cities } from '../___mock__'
 import { City } from '../models'
 import { cloudy, pSunny, snowy, sunny } from '../icons'
 import { WithIconsCode } from './codeSamples'
+import Highlighter from 'react-syntax-highlighter'
+import { atelierSeasideLight } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
 const wrapToIcon = (value: any): JSX.Element => {
   const icons = {
@@ -35,17 +37,20 @@ export const WithIcons = () => {
           Based on some custom logic you can render different data or icons in
           the table. In the example below the model looks like this:
           <pre>
-            <code>
-              {`
-              {
-                name: "Vancouver";
-                weather: "cloudy";
-                temperature: "21";
-                km: "3020";
-              }
-            `}
-            </code>
+            <code></code>
           </pre>
+          <div className='highlight-wrapper'>
+            <Highlighter style={atelierSeasideLight} language='javascript'>
+              {`
+  {
+    name: "Vancouver";
+    weather: "cloudy";
+    temperature: "21";
+    km: "3020";
+  }
+            `}
+            </Highlighter>
+          </div>
           Based on weather value different icons rendered instead.
         </p>
         <WithIconsCode />
