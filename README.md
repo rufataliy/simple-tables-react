@@ -1,4 +1,4 @@
-# simple-react-table
+# simple-tables-react
 
 > Lightweight simple react table library that will provide easy api and will keep your component clean.
 
@@ -7,26 +7,26 @@
 ## Install
 
 ```bash
-npm install --save simple-react-table
+npm install --save simple-tables-react
 ```
 
 ## Basic Usage
 
 ```tsx
 import React from 'react'
-import {Table, Options} from "simple-react-table"
+import { Table, Options } from 'simple-react-table'
 
-const options: Options<Employee>={
-  cellOptions:{
-    name: { displayName: "First name" },
-    emp_number: { displayName: "Employee number" },
-    position: { displayName: "Position" },
-    years: { displayName: "Experience" }
+const options: Options<Employee> = {
+  cellOptions: {
+    name: { displayName: 'First name' },
+    emp_number: { displayName: 'Employee number' },
+    position: { displayName: 'Position' },
+    years: { displayName: 'Experience' }
   }
 }
 
 class Example extends Component {
-  const [responseData] = useApi<Employee[]>()
+  [responseData] = useApi<Employee[]>()
 
   render() {
     return <Table data={responseData} options={options} />
@@ -37,3 +37,7 @@ class Example extends Component {
 ## License
 
 MIT © [rufataliy](https://github.com/rufataliy)
+
+### Keywords
+
+table, react, typescript
