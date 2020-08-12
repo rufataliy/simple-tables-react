@@ -34,7 +34,9 @@ class Example extends Component {
 }
 ```
 
-Check some more [examples](https://rufataliy.github.io/simple-tables-react/) here
+### More examples
+
+[here](https://rufataliy.github.io/simple-tables-react/)
 
 ## License
 
