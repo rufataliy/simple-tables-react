@@ -102,7 +102,7 @@ Current styles in the package are:
 }
 ```
 
-> Note that sticky header might not work in some browser liek IE.
+> Note that sticky header might not work in some browsers like IE.
 
 You can override styles by adding `.srt` selector before the current selector. For example:
 
