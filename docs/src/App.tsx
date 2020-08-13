@@ -1,5 +1,11 @@
 import React from 'react'
-import { WithLink, WithSelects, WithIcons, BasicTable } from './tables'
+import {
+  WithLink,
+  WithSelects,
+  WithIcons,
+  BasicTable,
+  WithNestedObject
+} from './tables'
 import './index.css'
 
 const App = () => {
@@ -14,7 +20,7 @@ const App = () => {
         <WithLink />
         <WithIcons />
         <WithSelects />
-        Some example coming soon . . .
+        <WithNestedObject />
       </div>
     </>
   )

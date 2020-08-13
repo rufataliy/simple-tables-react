@@ -45,6 +45,7 @@ td {
 
 .wrapper {
   padding: 20px 0;
+  padding-bottom: 80px;
   width: 70%;
   margin: 0 auto;
   display: flex;
