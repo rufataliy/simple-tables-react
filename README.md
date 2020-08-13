@@ -36,7 +36,7 @@ class Example extends Component {
 
 ## Custom cells
 
-You can wrap your data to with wrappers to created custom table cells.
+You can wrap your data with wrappers to creat custom table cells.
 
 ```tsx
 import React from 'react'
@@ -63,7 +63,7 @@ export const WithLink = () => {
 
 ### Deep nested data structure
 
-You can have array of nested object and access properties with dot notation referencing
+You can have an array of nested objects and access properties with dot notation referencing
 
 ```tsx
 import React from 'react'
