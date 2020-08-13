@@ -85,6 +85,35 @@ export const WithNestedObject = () => {
 }
 ```
 
+### Styling
+
+This component will do minimum for styling giving the user flexibility to style.
+Current styles in the package are:
+
+```css
+.srt-wrapper th {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.srt-wrapper {
+  overflow-y: auto;
+}
+```
+
+> Note that sticky header might not work in some browser liek IE.
+
+You can override styles by adding `.srt` selector before the current selector. For example:
+
+```css
+.srt .srt-wrapper th {
+  background-color: lightsalmon;
+}
+```
+
+Another option can be creating tour custom wrapper with your styles.
+
 ### More examples
 
 [here](https://rufataliy.github.io/simple-tables-react/)
