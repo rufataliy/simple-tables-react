@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/simple-tables-react/static/css/main.cf93e3d4.chunk.css",
+    "main.js": "/simple-tables-react/static/js/main.0d50eeb5.chunk.js",
+    "main.js.map": "/simple-tables-react/static/js/main.0d50eeb5.chunk.js.map",
+    "runtime-main.js": "/simple-tables-react/static/js/runtime-main.4de08994.js",
+    "runtime-main.js.map": "/simple-tables-react/static/js/runtime-main.4de08994.js.map",
+    "static/js/2.7db2dd3d.chunk.js": "/simple-tables-react/static/js/2.7db2dd3d.chunk.js",
+    "static/js/2.7db2dd3d.chunk.js.map": "/simple-tables-react/static/js/2.7db2dd3d.chunk.js.map",
+    "index.html": "/simple-tables-react/index.html",
+    "precache-manifest.91abf0bfd4e6dcc11f28089c46f4b4e6.js": "/simple-tables-react/precache-manifest.91abf0bfd4e6dcc11f28089c46f4b4e6.js",
+    "service-worker.js": "/simple-tables-react/service-worker.js",
+    "static/css/main.cf93e3d4.chunk.css.map": "/simple-tables-react/static/css/main.cf93e3d4.chunk.css.map",
+    "static/js/2.7db2dd3d.chunk.js.LICENSE.txt": "/simple-tables-react/static/js/2.7db2dd3d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4de08994.js",
+    "static/js/2.7db2dd3d.chunk.js",
+    "static/css/main.cf93e3d4.chunk.css",
+    "static/js/main.0d50eeb5.chunk.js"
+  ]
+}
