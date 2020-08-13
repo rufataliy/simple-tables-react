@@ -36,7 +36,7 @@ class Example extends Component {
 
 ## Custom cells
 
-You can wrap your data with wrappers to creat custom table cells.
+You can wrap your data with wrappers to create custom table cells.
 
 ```tsx
 import React from 'react'
