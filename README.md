@@ -2,7 +2,7 @@
 
 > Lightweight simple react table library that will provide easy api and will keep your component clean.
 
-[![NPM](https://img.shields.io/npm/v/simple-tables-react.svg)](https://www.npmjs.com/package/simple-tables-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/simple-tables-react.svg)](https://www.npmjs.com/package/simple-tables-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![tests](https://github.com/rufataliy/simple-tables-react/workflows/CI/badge.svg?branch=master)
 
 ## Install
 
