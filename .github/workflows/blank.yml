@@ -23,6 +23,6 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run a tests
+    - name: Run tests
       run: npm run test
 
