@@ -112,7 +112,7 @@ You can override styles by adding `.srt` selector before the current selector. F
 }
 ```
 
-Another option can be creating tour custom wrapper with your styles.
+Another option can be creating custom wrapper with your styles.
 
 ## More examples
 
