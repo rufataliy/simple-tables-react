@@ -4,9 +4,9 @@ type GetHeaders = (options: Options<any>) => string[]
 
 export const getHeaders: GetHeaders = (options) => {
   if (!options || !options.cellOptions) {
-    throw Error(`Please provide options object with cellOptions configuration. 
-                    For more info see examples in https://rufataliy.github.io/simple-tables-react/.
-                    Using typescript could be handy not to miss the required props.`)
+    throw Error(
+      `Please provide options object with cellOptions configuration. For more info see examples in https://rufataliy.github.io/simple-tables-react/. Using typescript could be handy not to miss the required props.`
+    )
   }
 
   const headers = Object.keys(options.cellOptions).map(
