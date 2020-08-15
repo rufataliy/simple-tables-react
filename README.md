@@ -61,7 +61,7 @@ export const WithLink = () => {
 }
 ```
 
-### Deep nested data structure
+## Deep nested data structure
 
 You can have an array of nested objects and access properties with dot notation referencing
 
@@ -85,7 +85,7 @@ export const WithNestedObject = () => {
 }
 ```
 
-### Styling
+## Styling
 
 This component will do minimum for styling giving the user flexibility to style.
 Current styles in the package are:
@@ -102,7 +102,7 @@ Current styles in the package are:
 }
 ```
 
-> Note that sticky header might not work in some browsers like IE.
+> Note that sticky header might not work in some browser like IE.
 
 You can override styles by adding `.srt` selector before the current selector. For example:
 
@@ -114,13 +114,13 @@ You can override styles by adding `.srt` selector before the current selector. F
 
 Another option can be creating tour custom wrapper with your styles.
 
-### More examples
+## More examples
 
 [here](https://rufataliy.github.io/simple-tables-react/)
 
 ## License
 
-MIT © [rufataliy](https://github.com/rufataliy)
+MIT [License](https://github.com/rufataliy/simple-tables-react/blob/master/LICENSE.md)
 
 ### Keywords
 
