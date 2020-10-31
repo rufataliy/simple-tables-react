@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8471dccfd7a46176ce4321c09d7e5f22",
+    "revision": "b44b10e9a33c8f3d526feb186c825023",
     "url": "/simple-tables-react/index.html"
   },
   {
